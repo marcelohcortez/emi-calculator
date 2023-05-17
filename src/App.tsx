@@ -13,7 +13,6 @@ function App() {
   const [interestRateAnual, setInterestRateAnual] = useState(0);
   const [downPayment, setDownPayment] = useState(0);
   const [emi, setEmi] = useState(0);
-  const [buttonSelected, setButtonSelected] = useState("")
 
   const calculateEMI = ({
     itemValue,
@@ -51,11 +50,6 @@ function App() {
     setEmi(emi);
   }, [itemValue, tenure, interestRateAnual, downPayment]);
 
-  const tenureButtonClick = (item: number) => {
-    setButtonSelected("buttonSelected");
-    setTenure(item)
-  }
-
   return (
     <main className="w-[40%] lg:w-[50%] md:w-[80%] sm:w-[90%] min-[320px]:w-[90%] m-auto mt-20">
       <header className="mb-10">
@@ -91,7 +85,7 @@ function App() {
                 <button
                   key={item}
                   className={`w-1/6 border border-1 border-black p-3 rounded-md hover:bg-slate-300 ${item === tenure ? "bg-slate-400" : "bg-slate-200"}`}
-                  onClick={() => tenureButtonClick(item)}
+                  onClick={() => setTenure(item)}
                 >
                   {item} {item > 1 ? "years" : "year"}
                 </button>
