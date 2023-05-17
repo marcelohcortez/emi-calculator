@@ -14,6 +14,8 @@ R = Interest rate per month
 
 Simple project that makes use of React components and hooks
 
+**[LIVE DEMO](https://emi-calculator-tan-chi.vercel.app/)**
+
 ## How to run the project:
 - Clone the repository
 - Run:
