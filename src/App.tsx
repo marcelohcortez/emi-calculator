@@ -58,6 +58,12 @@ function App() {
           Run your simulations and see what will be your monthly payment and the
           final value that you will pay for your loan.
         </p>
+        <p className="mt-5">The formula used is: <span className="font-bold">P x R x (1+R)^N / [(1+R)^N-1]</span></p>
+        <ul>
+          <li>P = Total loan amount minus any down payment</li>
+          <li>N = Loan tenure in months</li>
+          <li>R = Interest rate per month</li>
+        </ul>
       </header>
       <section>
         <TextInput
