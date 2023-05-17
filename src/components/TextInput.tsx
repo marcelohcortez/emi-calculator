@@ -15,11 +15,11 @@ export default function TextInput({
   };
 
   return (
-    <div className="bg-slate-200 border border-1 border-black p-2 mb-2 rounded-md">
+    <div className="bg-slate-200 border border-1 border-black p-3 mb-2 rounded-md">
       <p>{title}</p>
       <input
         type="number"
-        className="border-black border p-2 w-[150px] rounded-md"
+        className="border-black border p-2 w-[180px] rounded-md"
         value={state ? state : ""} //condition to avoid 'uncontrolled input' issue
         onChange={(e) => changeHandler(e)}
       />

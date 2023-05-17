@@ -57,17 +57,17 @@ function App() {
   }
 
   return (
-    <main className="w-4/5 m-auto mt-20">
-      <header>
+    <main className="w-[40%] lg:w-[50%] md:w-[80%] sm:w-[90%] min-[320px]:w-[90%] m-auto mt-20">
+      <header className="mb-10">
         <h1 className="text-3xl font-bold text-center mb-2">EMI Calculator</h1>
-        <p className="mb-5">
+        <p className="text-center">
           Run your simulations and see what will be your monthly payment and the
           final value that you will pay for your loan.
         </p>
       </header>
       <section>
         <TextInput
-          title={"Input the total value of the car/house (numbers only"}
+          title={"Input the total value of the car/house (numbers only)"}
           state={itemValue}
           setState={setItemValue}
         />

@@ -20,7 +20,7 @@ export default function SliderInput({
         setState(eventValue);
     }
     return (
-      <div className="bg-slate-200 border border-1 border-black p-2 mb-2 rounded-md">
+      <div className="bg-slate-200 border border-1 border-black p-3 mb-2 rounded-md">
         <p>{title}</p>
         <div>
           <input
