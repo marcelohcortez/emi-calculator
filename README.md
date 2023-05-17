@@ -12,7 +12,7 @@ N = Loan tenure in months
 
 R = Interest rate per month
 
-The project also includes a field for 'processing fees' that will calculate the value of the fee using the total loan amount (total loan - down payment)
+Simple project that makes use of React components and hooks
 
 ## How to run the project:
 - Clone the repository
