@@ -67,7 +67,7 @@ function App() {
       </header>
       <section>
         <TextInput
-          title={"Input the total value of the car/house (numbers only)"}
+          title={"Input the total value of the item you want to purchase"}
           state={itemValue}
           setState={setItemValue}
         />
